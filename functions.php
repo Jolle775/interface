@@ -398,12 +398,12 @@ new Rational_Meta_Box;
 
 
 
-function get_the_invest($user_id,$asset_id){
+function get_the_invest($user_id,$project_id){
 	$meta_query_args = array(
 		'relation' => 'AND', // Optional, defaults to "AND"
 		array(
 			'key'     => 'projects',
-				'value'   => $asset_id,
+				'value'   => $project_id,
 			'compare' => '='
 		),
 		array(
